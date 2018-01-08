@@ -1,4 +1,11 @@
-$(document).ready( function(){
+$(document).ready(function(){
+
+
+$(".js-back").hide(); //bontones ocultos y mostrados
+$(".js-Menu").show();
+$(".js-menu").hide();
+
+
 
 	//La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
 	renderHighlightedRecipes(recipesArray);
