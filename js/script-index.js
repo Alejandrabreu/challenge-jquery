@@ -6,6 +6,12 @@ $(".js-Menu").show();
 $(".js-menu").hide();
 
 
+//noticia pint
+
+function printNews(){
+ 	$(".recipes-food").html("<b>News Recipes</b>");  //muestra de noticias
+};
+	printNews();
 
 	//La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
 	renderHighlightedRecipes(recipesArray);
