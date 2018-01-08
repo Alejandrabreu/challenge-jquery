@@ -16,6 +16,14 @@ function printNews(){
 	//La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
 	renderHighlightedRecipes(recipesArray);
 
+	var find = recipesArray ['highlighted']
+
+	$.each(recipesArray,function(i,find){ //metodo "each" para iterar dentro de la data buscando el highlighted, solicitado
+			
+			if (find.highlighted===true){ //si en la data este exactamente igual el highlighted
+				console.log(find);		  // muestramelo.
+			}
+	});
 });
 
 
@@ -24,7 +32,7 @@ function printNews(){
 * marcado el atributo "highlighted" como TRUE
 */
 function renderHighlightedRecipes(recipesArray) {
-	console.log('Recipes: ', recipesArray);
+	console.log('Recipes:', recipesArray); 
 }
 
 /*
@@ -34,7 +42,7 @@ function renderHighlightedRecipes(recipesArray) {
 * archivo "templates/templates-recipe.html"
 */
 function renderRecipe(recipe) {
-	console.log('Voy a pintar la receta: ', recipe);
+	console.log('Voy a pintar la receta:find', recipe); //se cumplio lo solicitado en la función anterior
 }
 
 
